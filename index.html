@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Front-end foundations: HTML forms</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main></main>
+  </body>
+
+	<form>
+	<!-- Name box -->
+		<div>
+			<label for="name">Name:</label><br>
+			<input id="name" type="text" name="name" 
+				required/></br>
+		</div>
+	<!-- Email box -->
+		<div>
+			<br></br>
+			<label for="email">Email:</label><br>
+			<input
+				id="email"
+				type="text"
+				name="email"
+				autofocus="on"
+				required
+			/></br>
+		</div>
+		</form>
+	<!-- Your Message box -->
+		<div>
+			<br></br>
+			<label for="form-message">Your message:</label><br>
+			<textarea
+				id="form-message"
+				name="message"
+				required
+				maxlength="200"
+			></textarea></br>
+			<br></br>
+		</div>
+	<!-- Color Selector box -->
+		<div>
+			<label for="color">Favorite Color:</label><br>
+			<input type= "color" id="color" name="color" /></br>
+		</div>
+	<!-- Gender Selector radio  buttons -->
+	<div>
+		<br></br>
+		Please Select your Gender:
+		<br></br>
+		<label for="male">Male:</label>
+		<input type= "radio" name="gender" id="male"/>
+	</div>
+	<div>
+	<label for="female">Female:</label>
+		<input type= "radio" name="gender" id="female"/>
+	</div>
+	<div>
+		<label for="other">Other:</label>
+			<input type= "radio" name="gender" id="other"/>
+	</div>
+	<!-- Submit button -->
+		<div>	
+			<br></br>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+</html>
